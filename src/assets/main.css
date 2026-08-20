@@ -304,7 +304,6 @@ main {
 .hero .subtitle {
   font-size: 17px;
   color: var(--text-secondary);
-  max-width: 520px;
   line-height: 1.6;
 }
 
@@ -571,25 +570,26 @@ main {
   list-style: none;
   margin-bottom: 16px;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .about-content ul li,
 .about-content ol li {
-  padding: 6px 0;
+  padding: 6px 14px;
   color: var(--text-secondary);
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 14px;
+  border-radius: 20px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition);
 }
 
-.about-content ul li::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--accent-blue);
-  flex-shrink: 0;
+.about-content ul li:hover,
+.about-content ol li:hover {
+  border-color: var(--accent-blue);
+  color: var(--text-primary);
 }
 
 .about-content ol {
@@ -602,17 +602,9 @@ main {
 
 .about-content ol li::before {
   content: counter(about-counter);
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--accent-blue);
-  color: #fff;
-  font-size: 12px;
+  margin-right: 6px;
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+  color: var(--accent-blue);
 }
 
 .contact-card {

@@ -14,6 +14,7 @@
           <li>AI</li>
           <li>网站</li>
           <li>Minecraft</li>
+          <li>Counter-Strike</li>
         </ul>
 
         <h2>在学习</h2>
